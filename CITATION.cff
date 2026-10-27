@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "pqblocks-qiea"
+version: "0.1.0"
+license: Apache-2.0
+repository-code: "https://github.com/PQBlocks/quantum-inspired-evolutionary"
+authors:
+  - name: "The PQBlocks Authors"
+keywords:
+  - qiea
+  - quantum-inspired
+  - evolutionary-algorithm
+  - q-bit
+  - quantum-rotation-gate
+  - ising
+  - qubo
+  - heuristic
+abstract: "Quantum-Inspired Evolutionary Algorithm (QIEA) with Q-bit representations and quantum rotation gates for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography."

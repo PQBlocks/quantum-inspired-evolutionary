@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pqblocks-qiea"
+version = "0.1.0"
+description = "Quantum-Inspired Evolutionary Algorithm (QIEA) with Q-bit representations and quantum rotation gates for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.11"
+authors = [{name = "The PQBlocks Authors"}]
+keywords = ["qiea", "quantum-inspired", "evolutionary-algorithm", "q-bit", "quantum-rotation-gate", "ising", "qubo", "heuristic"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = ["numba", "numpy", "numpy", "numba"]
+
+[project.optional-dependencies]
+test = ["pytest", "numpy", "numba", "scipy"]
+
+[project.urls]
+Homepage = "https://github.com/PQBlocks/quantum-inspired-evolutionary"
+Documentation = "https://github.com/PQBlocks/quantum-inspired-evolutionary#readme"
+Source = "https://github.com/PQBlocks/quantum-inspired-evolutionary"
+Changelog = "https://github.com/PQBlocks/quantum-inspired-evolutionary/blob/main/CHANGELOG.md"
+Issues = "https://github.com/PQBlocks/quantum-inspired-evolutionary/issues"
+Security = "https://github.com/PQBlocks/quantum-inspired-evolutionary/security/policy"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
